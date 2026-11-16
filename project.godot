@@ -1,0 +1,38 @@
+; Engine configuration file.
+; Merkutstudios - Bricky v0.9.0-alpha (Godot 4.7+ Mobile Architecture - Visual Clarity, Hold-Time & LoL Arena Style Cards)
+
+config_version=5
+
+[application]
+
+config/name="Bricky"
+config/version="v0.9.0-alpha"
+config/description="Merkutstudios - Classic Endless Level Tree & Roguelite Brick Breaker"
+run/main_scene="res://scenes/MainGame.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+
+[autoload]
+
+GameData="*res://scripts/autoload/GameData.gd"
+AudioHapticManager="*res://scripts/autoload/AudioHapticManager.gd"
+DDAManager="*res://scripts/autoload/DDAManager.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/size/window_width_override=450
+window/size/window_height_override=800
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.06, 0.08, 0.11, 1)
